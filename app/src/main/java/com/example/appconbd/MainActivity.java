@@ -50,20 +50,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void insertarDatosDePrueba() {
         Autor autor = new Autor();
-        autor.nombre = "Chalo";
-        autor.apellido = "P";
+        autor.nombre = "Luis Miguel";
+        autor.apellido = "Perez";
 
         Sala sala = new Sala();
-        sala.nombre = "Sala 1";
+        sala.nombre = "Sala principal";
         sala.descripcion = "Sala principal";
 
         Pintura pintura = new Pintura();
-        pintura.titulo = "Glennys";
-        pintura.tecnica = "Olea";
-        pintura.categoria = "Fotografía";
-        pintura.descripcion = "Una fotografía del bosque";
+        pintura.titulo = "Oda a Homero";
+        pintura.tecnica = "Acrilico";
+        pintura.categoria = "Retrato";
+        pintura.descripcion = "Un retrato a un personaje animado";
         pintura.ano = 2024;
-        pintura.enlace = "https://example.com/guernica.jpg";
+        pintura.enlace = "https://wikihomero.com/dou.jpg";
 
         new InsertDataTask(db).execute(autor, sala, pintura);
     }
